@@ -1,0 +1,28 @@
+ingestion/tests/unit/topology/pipeline/test_airbyte.py
+  s_5db70fbfe29a96::t_14c8c32872ca2b 340-394
+  s_5db70fbfe29a96::t_b3155889f8e214 339
+ingestion/src/metadata/ingestion/source/pipeline/airbyte/utils.py
+  s_5db70fbfe29a96::t_8765ffdf65f6e8 68-72,74-77,80
+  s_5db70fbfe29a96::t_291dc165ee28bc 36-39,42-45,48,51-52
+  s_5db70fbfe29a96::t_1a3585839de40e 21-26
+ingestion/src/metadata/ingestion/source/pipeline/airbyte/models.py
+  s_5db70fbfe29a96::t_58e6419bb93651 82-83,85,87-97,104,106-114
+ingestion/src/metadata/ingestion/source/pipeline/airbyte/constants.py
+  s_5db70fbfe29a96::t_82503b79a66d42 30-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "dbf852931766af60fac4f783e3c69ec90cbe2f30",
+  "prompts": {},
+  "sessions": {
+    "s_5db70fbfe29a96": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ba7a69fc-a687-401b-a7f2-9e4ee0cdc550",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Cale <cale.anderson93@gmail.com>"
+    }
+  }
+}
