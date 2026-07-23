@@ -140,7 +140,7 @@ jobs:
         run: mvn -DskipTests clean package
 
       - name: Upload Maven build artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: openmetadata-build
           overwrite: true
@@ -449,7 +449,7 @@ jobs:
       # data — results.json is uploaded unconditionally below for the
       # summary job.
       - name: Upload Playwright HTML report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: failure() || cancelled()
         continue-on-error: true
         with:
@@ -460,7 +460,7 @@ jobs:
           if-no-files-found: ignore
 
       - name: Upload test results (screenshots, traces)
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always()
         continue-on-error: true
         with:
@@ -471,7 +471,7 @@ jobs:
           if-no-files-found: ignore
 
       - name: Upload results JSON for summary
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: always()
         with:
           name: playwright-results-json-${{ matrix.shardIndex }}
@@ -512,7 +512,7 @@ jobs:
           fi
 
       - name: Upload failure diagnostics
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         if: failure() || cancelled()
         continue-on-error: true
         with:
@@ -572,7 +572,7 @@ jobs:
       - name: Upload Playwright shadow-gate ledger
         if: ${{ always() && needs.playwright-ci-postgresql.result != 'skipped' }}
         continue-on-error: true
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: playwright-shadow-gate-postgresql-pr-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/playwright-shadow-gate/outcome.json
