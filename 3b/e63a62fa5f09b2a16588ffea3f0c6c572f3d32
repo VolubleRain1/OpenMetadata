@@ -1,0 +1,22 @@
+ingestion/src/metadata/ingestion/source/pipeline/airbyte/client.py
+  s_5db70fbfe29a96::t_74acd5971d30c9 241-247
+  s_5db70fbfe29a96::t_90e20503d79e50 223-225
+ingestion/tests/unit/topology/pipeline/test_airbyte_client.py
+  s_5db70fbfe29a96::t_b55e69dc99373c 554-581
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.15",
+  "base_commit_sha": "3be63a62fa5f09b2a16588ffea3f0c6c572f3d32",
+  "prompts": {},
+  "sessions": {
+    "s_5db70fbfe29a96": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "ba7a69fc-a687-401b-a7f2-9e4ee0cdc550",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Cale <cale.anderson93@gmail.com>"
+    }
+  }
+}
