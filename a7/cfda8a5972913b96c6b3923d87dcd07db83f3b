@@ -1,0 +1,20 @@
+ingestion/tests/unit/topology/pipeline/test_airbyte.py
+  s_6d65633722775b::t_81e6152d396aa2 345
+  s_6d65633722775b::t_fdfc9857418258 402-511
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.16",
+  "base_commit_sha": "a7cfda8a5972913b96c6b3923d87dcd07db83f3b",
+  "prompts": {},
+  "sessions": {
+    "s_6d65633722775b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "10322f64-27d2-4257-8f03-e8fc4efc021f",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": "Cale <cale.anderson93@gmail.com>"
+    }
+  }
+}
